@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visit</title>
+    <style>
+        body{
+    background-color: #0000ff;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    min-height: 100vh;
+}
+.Sidebar
+{
+    background-color: #33d6ff;
+    width: 200px;
+}
+.containt
+{
+    background-image: url("./images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu-item
+{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    flex: wrap;
+}
+.menu-bottom-item
+{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.menu-item:hover{
+    background-color: aliceblue;
+}
+.menu-icon
+{
+    height: 20px;
+}
+.menu-text
+{
+  margin-left:5px ;
+}
+.active-menu
+{
+    background-color: lavender;
+}
+.bottom-nev-bar
+{
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b30047;
+    color:#e37aa4;
+    flex: none;
+   }
+   
+.headline
+        {
+            font-size: 80px;
+            color:white;
+         }
+        .text
+        {
+            color: white;
+            font-style: italic;
+            font-size: larger;
+            position: absolute;
+            font-size: larger
+        }
+        ul{
+            font-size: larger;
+            color: cornsilk;
+        }
+@media screen and (min-width: 400px){
+   .bottom-nev-bar
+   {
+    display: block;
+   }
+   .Sidebar
+    {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+   
+    .Sidebar
+    {
+        display: none;
+    }
+}
+/* Tablet Devices */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .Sidebar
+    {
+        display: none;
+    }
+   
+}
+
+/* Dekstop device */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) 
+{
+    .Sidebar
+    {
+        display: none;
+    }
+    .contact
+       {
+        font-size: 45px;
+        color: #b30047;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-left: 300px;
+       }
+}
+    </style>
+</head>
+<body>
+    <section id="visit-us">
+        <h2>Visit Us</h2>
+        <div class="location">
+            <h3>Our Location</h3>
+            <p>Bavdhan,BK,Pune,Mulshi,411021.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60536.590411102865!2d73.68732842205215!3d18.50462444431537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2be5eb7d345d3%3A0xf0109d3c84119787!2sBavdhan%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1718014512472!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    <div class="containt ">
+        <h1>This is visit us page</h1>
+    </div>
+    <div class="bottom-nev-bar ">
+      <a class="menu-bottom-item " href="./index.html">
+                <img  src="./images/sidebar_icon/home.png" class="menu-icon">
+                 </a>
+
+           <a class="menu-bottom-item " href="./pages/menu.html">
+                <img  src="./images/sidebar_icon/menu.png" class="menu-icon">
+           </a>
+           <a class="menu-bottom-item" href="./pages/contact.html">
+                <img  src="./images/sidebar_icon/contact.png" class="menu-icon">
+           </a>
+           <a class="menu-bottom-item" href="./pages/visit.html">
+                <img  src="./images/sidebar_icon/visit.png" class="menu-icon">
+           </a>
+     </div>
+</body>
+</html>
