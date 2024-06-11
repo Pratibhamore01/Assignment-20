@@ -1,0 +1,144 @@
+body{
+    background-color: #4b4be9;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+display: flex;
+min-height: 100vh;
+}
+.Sidebar
+{
+background-color: #33d6ff;
+width: 200px;
+}
+.containt
+{
+background-image: url("./images/bg1.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+position:relative;
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+}
+.menu-item
+{
+background-color: white;
+margin: 10px;
+border-radius: 5px;
+border: solid 2px black;
+display: flex;
+align-items: center;
+padding: 5px 20px;
+cursor: pointer;
+flex: wrap;
+}
+.menu-icon {
+height: 40px;
+width: 40px;
+}
+.menu-bottom-item
+{
+background-color: rgb(3, 131, 63);
+margin: 10px;
+border-radius: 5px;
+align-items: center;
+padding: 5px 20px;
+cursor: pointer;
+display: inline-block;
+}
+.menu-item:hover{
+background-color: aliceblue;
+cursor: pointer;
+}
+
+.menu-text
+{
+margin-left:5px ;
+}
+.active-menu
+{
+background-color: lavender;
+}
+.bottom-nev-bar
+{
+display: inline-block;
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: #7a2346;
+color:#e37aa4;
+flex: none;
+}
+
+.headline
+   {
+       font-size: 80px;
+       color:rgb(220, 224, 20);
+    }
+   .text
+   {
+       color: rgb(186, 226, 43);
+       font-style: italic;
+       font-size: larger;
+       position: absolute;
+       font-size: larger
+   }
+   ul{
+       font-size: xx-large;
+       color: rgb(157, 5, 5);
+   }
+@media screen and (min-width: 400px){
+.bottom-nev-bar
+{
+display: block;
+}
+.Sidebar
+{
+   display: none;
+   width: 100px;
+   padding: 10px;
+}
+.menu-item{
+   justify-content: center;
+}
+
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+.Sidebar
+{
+   display: none;
+}
+}
+/* Tablet Devices */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+.Sidebar
+{
+   display: none;
+}
+
+}
+
+/* Dekstop device */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) 
+{
+.Sidebar
+{
+   display: none;
+}
+.contact
+  {
+   font-size: 45px;
+   color: #b30047;
+   text-align: center;
+   font-weight: bold;
+   margin-top: 100px;
+   margin-left: 300px;
+  }
+}
