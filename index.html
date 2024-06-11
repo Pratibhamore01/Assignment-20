@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <style>
+        body{
+    background-color: #3131f8;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    min-height: 100vh;
+}
+.Sidebar
+{
+    background-color: #33d6ff;
+    width: 200px;
+}
+.containt
+{
+    background-image: url("./images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.menu-item
+{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    flex: wrap;
+}
+.menu-bottom-item
+{
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.menu-item:hover{
+    background-color: aliceblue;
+}
+.menu-icon
+{
+    height: 20px;
+}
+.menu-text
+{
+  margin-left:5px ;
+}
+.active-menu
+{
+    background-color: lavender;
+}
+.bottom-nev-bar
+{
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b30047;
+    color:#e37aa4;
+    flex: none;
+   }
+   
+.headline
+        {
+            font-size: 80px;
+            color:white;
+         }
+        .text
+        {
+            color: white;
+            font-style: italic;
+            font-size: larger;
+            position: absolute;
+            font-size: larger
+        }
+        ul{
+            font-size: larger;
+            color: cornsilk;
+        }
+@media screen and (min-width: 400px){
+   .bottom-nev-bar
+   {
+    display: block;
+   }
+   .Sidebar
+    {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+   
+    .Sidebar
+    {
+        display: none;
+    }
+}
+/* Tablet Devices */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .Sidebar
+    {
+        display: none;
+    }
+   
+}
+
+/* Dekstop device */
+
+@media screen and (min-width: 993px) and (max-width: 1200px) 
+{
+    .Sidebar
+    {
+        display: none;
+    }
+    .contact
+       {
+        font-size: 45px;
+        color: #b30047;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 100px;
+        margin-left: 300px;
+       }
+}
+    </style>
+    </head>
+<body>
+    <div class="container">
+        <div class="Sidebar">
+            <a class="menu-item active-menu" href="./index.html">
+                <img  src="./images/sidebar_icon/home.png" class="menu-icon">
+                <span class="menu-text">Home</span>
+            </a>
+           <a class="menu-item " href="./pages/menu.html">
+                <img  src="./images/sidebar_icon/menu.png" class="menu-icon">
+                <span class="menu-text">Menu</span>
+            </a>
+           <a class="menu-item " href="./pages/contact.html">
+                <img  src="./images/sidebar_icon/contact.png" class="menu-icon">
+                <span class="menu-text">Contact</span>
+            </a>
+           <a class="menu-item " href="./pages/visit.html">
+                <img  src="./images/sidebar_icon/visit.png" class="menu-icon">
+                <span class="menu-text">Visit Us</span>
+           </a>
+
+        </div>
+        <div class="containt ">
+        <p class="headline">SAI GOLDEN<br/></p>
+        <p class="text"><h2>The Restaurant Eating Services To All Under Righteousness And Nourishment.</h2></p><br/><br/><br/>
+        </div>
+        <div class="bottom-nev-bar ">
+          <a class="menu-bottom-item " href="./index.html">
+                    <img  src="./images/sidebar_icon/home.png" class="menu-icon">
+                     </a>
+
+               <a class="menu-bottom-item " href="./pages/menu.html">
+                    <img  src="./images/sidebar_icon/menu.png" class="menu-icon">
+               </a>
+               <a class="menu-bottom-item" href="./pages/contact.html">
+                    <img  src="./images/sidebar_icon/contact.png" class="menu-icon">
+               </a>
+               <a class="menu-bottom-item" href="./pages/visit.html">
+                    <img  src="./images/sidebar_icon/visit.png" class="menu-icon">
+               </a>
+        </div>
+    </div>
+    </body>
+</html>
